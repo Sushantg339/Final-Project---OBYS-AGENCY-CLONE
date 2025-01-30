@@ -14,7 +14,7 @@ tl.from("#line1-part1 , .line h5", {
       if (grow === 100) {
         clearInterval(intervalID);
       }
-      h5loader.innerHTML = grow;
+      h5loader.textContent = grow;
       grow++;
     }, 30);
   },
@@ -24,3 +24,11 @@ tl.to("#loader", {
   delay: 2.5,
   duration: 0.4,
 });
+tl.from("#page1",{
+    y:1000,
+    duration:0.5,
+    delay:0.3,
+});
+tl.to("#loader",{
+  display : "none",
+})
